@@ -1,0 +1,77 @@
+
+body {               /*Fondo a toda la pagina*/
+    background-color: rgb(109, 144, 106);
+    font-family: Arial, sans-serif;      /*Tipo de letra*/
+}
+
+
+h1 {         /*Titulo principal*/
+    color: rgb(43, 77, 43);
+    text-align: center;
+}
+
+
+section {       /*Secciones */
+    padding: 20px;
+    background-color: white;
+    margin: 20px 40px; /* Espacio a los lados */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+nav {               /* Para la barra de centro de enlaces en color verde*/
+            background-color: rgb(0, 104, 0);                   
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {          /* Esto es para el efecto que pasa el mause */
+    text-decoration: underline;
+    color: #d0ffd0; 
+}
+
+
+#banner {
+    background-image: url("Banner.jpg"); /* La imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   /* Efecto animación al bajar el mouse */
+    height: 400px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner::before {        /* Para un fondo oscuro en el banner */
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece pero solo un poquito */
+    z-index: 1;
+}
+
+.contenido-banner {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-banner {
+    width: 100px;
+    margin-bottom: 10px;
+}
+#banner {
+    background-image: url("../img/Banner.jpg");
+}
+
